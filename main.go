@@ -12,7 +12,7 @@ func main() {
 
 	logic.RegisterHttp(router)
 
-	err := router.Run("127.0.0.1:7777")
+	err := router.Run("0.0.0.0:7777")
 	if err != nil {
 		log.Panicf("router.Run err:%v", err)
 	}
